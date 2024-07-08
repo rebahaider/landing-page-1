@@ -1,4 +1,8 @@
-.bg-image{
+body{
+    margin: 0;
+    padding: 0;
+}
+.bg-image {
     background-image: url("images/bgimage.png");
     height: 1351px;
     text-align: center;
@@ -7,27 +11,40 @@
     background-size: cover;
     background-position: fixed;
 }
-.heading{
+
+.heading {
     color: white;
     font-weight: bold;
     padding-top: 200px;
     font-size: 30px;
+    font-family: comfortaa;
 }
-.title{
+.heading2{
+    color: #29ABE2;
+    font-family: comfortaa;
+    font-size: 30px;
+    font-weight: bold;
+}
+.title {
     color: #2B426B;
     font-weight: 600;
     text-transform: uppercase;
     font-size: 50px;
+    font-family: raleway;
 }
-.subTitle{
+
+.subTitle {
     color: white;
     font-size: 20px;
+    font-family: raleway;
 }
-iframe{
+
+iframe {
     border-radius: 30px;
     border: 2px solid black;
 }
-.btn{
+
+.btn {
     text-transform: uppercase;
     border: 1px solid white;
     width: 263px;
@@ -36,27 +53,94 @@ iframe{
     background-color: #29ABE2;
     color: white;
     cursor: pointer;
+    font-family: raleway;
 }
-.btn-section{
+
+.btn-section {
     padding-top: 30px;
 }
 
 /* white section */
-.bg-image2{
+.bg-image2 {
     background-image: url("images/bg.png");
-    height: 400px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
-.showing-part{
+
+.showing-part {
     display: flex;
+    align-items: center;
     gap: 30px;
-    
+    color: #2B426B;
+    font-family: raleway;
 }
-.second-part{
+
+
+.second-part {
     display: flex;
     justify-content: space-evenly;
     padding-top: 100px;
-    
+
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+.modal-content {
+    background-image: url("images/formBg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    padding: 20px;
+    height: 80%;
+    width: 80%;
+    border-radius: 30px;
+
+}
+
+.form-title {
+    color: #29ABE2;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.input-field {
+    width: 500px;
+    border: none;
+    border-radius: 100px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#form-btn {
+    width: 550px;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    padding-right: 20px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }

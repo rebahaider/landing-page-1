@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <!-- comfortaa font link -->
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+    <!-- font raleway -->
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
     <title>Landing Page 1</title>
 </head>
 
@@ -14,39 +18,102 @@
         <h2 class="title">This Is The EXACT System that we use <br>
             to onboard our website clients</h2>
         <h6 class="subTitle">ENTER YOUR INFORMATION AND ON THE NEXT PAGE I'LL SHOW YOU THE SYSTEM.</h6>
-        <div>
+
+       
             <iframe width="994" height="627" src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
             </iframe>
-        </div>
+        
+        
         <div class="btn-section">
-            <button class="btn">get training here</button>
+            <button id="myBtn" class="btn">get training here</button>
+        </div>
+        <!-- get training here btn modal -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3 class="form-title">enter your details to watch</h3>
+                <input type="text" name="" id="" placeholder="FIRST NAME" class="input-field"> <br>
+                <input type="text" name="" id="" placeholder="LAST NAME" class="input-field"><br>
+                <input type="text" name="" id="" placeholder="PHONE NUMBER" class="input-field"><br>
+                <input type="submit" name="" id="form-btn" value="SUBMIT" class="btn">
+            </div>
         </div>
     </div>
     <div class="bg-image2">
-        <div  class="second-part">
+        <div class="second-part">
             <div>
                 <img src="images/man.png" alt="">
             </div>
             <div>
-                <h3>in this video i'll show you</h3>
-                
-                    <div class="showing-part">
-                        <img src="images/1.png" alt="">
-                        <h4>The elements needed to make your ideal <br> website</h4>
+                <h3 class="heading2">in this video i'll show you</h3>
+
+                <div class="showing-part">
+                    <div><img src="images/1.png" alt=""></div>
+                    <h4>The elements needed to make your ideal <br> website</h4>
+                </div>
+                <div class="showing-part">
+                    <div><img src="images/1.png" alt=""></div>
+                    <h4>How to make sure that your new website is <br> consistent with your brand and message</h4>
+                </div>
+                <div class="showing-part">
+                    <div><img src="images/1.png" alt=""></div>
+                    <h4>How to avoid a bad website design <br> experience</h4>
+                </div>
+                <button id="myBtn2" class="btn">get access now</button>
+                <!-- get access now btn modal -->
+                <div id="myModal2" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h3 class="form-title">enter your details to watch</h3>
+                        <input type="text" name="" id="" placeholder="FIRST NAME" class="input-field"> <br>
+                        <input type="text" name="" id="" placeholder="LAST NAME" class="input-field"><br>
+                        <input type="text" name="" id="" placeholder="PHONE NUMBER" class="input-field"><br>
+                        <input type="submit" name="" value="SUBMIT" class="btn">
                     </div>
-                    <div class="showing-part">
-                        <img src="images/1.png" alt="">
-                        <h4>How to make sure that your new website is <br> consistent with your brand and message</h4>
-                    </div>
-                    <div class="showing-part">
-                        <img src="images/1.png" alt="">
-                        <h4>How to avoid a bad website design <br> experience</h4>
-                    </div>
-                    <button class="btn">get access now</button>
+                </div>
             </div>
-            
+
         </div>
     </div>
+    <script>
+        // modal 1
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("myBtn");
+        var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        // modal 2
+        var modal2 = document.getElementById("myModal2");
+        var btn2 = document.getElementById("myBtn2");
+        var span = document.getElementsByClassName("close")[0];
+
+        btn2.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal2) {
+                modal2.style.display = "none";
+            }
+        }
+    </script>
 </body>
 
 </html>
