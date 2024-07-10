@@ -117,6 +117,7 @@
     font-family: raleway;
     font-size: 13px;
     font-weight: 500px;
+    letter-spacing: 2px;
 }
 
 .btn-section {
@@ -178,7 +179,7 @@
     font-size: 13px;
     font-weight: 500px;
     padding: 23px 63px;
-  
+  letter-spacing: 2px;
 }
 
 
@@ -234,7 +235,6 @@
     border-radius: 100px;
     border: none;
     background-color: #29ABE2;
-
 }
 .close {
     color: #aaaaaa;
