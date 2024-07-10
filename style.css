@@ -8,21 +8,20 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-position: fixed;
     text-align: center;
-    line-height: 1.6;
 }
 
 .logo{
-    width: 244px;
-    height: 57px;
-    padding-top: 24px;
+    max-width: 244px;
+    height: auto;
+    padding-top: 52px;
 }
 
 .heading {
     color: white;
     font-weight: bold;
-    padding-top: 80px;
+    padding-top: 100px;
+    padding-bottom: 20px;
     font-size: 30px;
     font-family: comfortaa;
 }
@@ -30,7 +29,7 @@
 .title {
     color: #2B426B;
     font-weight: 600;
-    width: 1000px;
+    max-width: 1000px;
     margin: auto;
     text-transform: uppercase;
     font-size: 50px;
@@ -42,7 +41,10 @@
     color: white;
     font-size: 20px;
     font-family: raleway;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 51px;
+    letter-spacing: 3px;
+    font-weight: 400;
 }
 
 .video-bg {
@@ -50,25 +52,16 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-position: fixed;
-    border: 3px solid black;
+    border: 2px solid black;
     border-radius: 32px;
     position: relative;
-    width: 994px;
-    height: 627px;
+    max-width: 994px;
+    padding-top: 264px;
+    padding-bottom:264px ;
     margin: auto;
 }
 
-.overlay {
-    background-color: #00000066;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    border-radius: 30px;
-}
+
 
 .playBtn {
     position: absolute;
@@ -77,8 +70,8 @@
     transform: translate(-50%, -50%);
     z-index: 1;
     cursor: pointer;
-    width: 100px;
-    height: 100px;
+    max-width: 100px;
+    height: auto;
 }
 
 /* Video Popup Styles */
@@ -91,15 +84,14 @@
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.9);
+    margin: auto;
 }
 
 .video-content {
     position: relative;
     margin: auto;
     padding: 20px;
-    width: 80%;
-    max-width: 700px;
+    max-width:700px;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -117,8 +109,7 @@
 .btn {
     text-transform: uppercase;
     border: 1px solid white;
-    width: 263px;
-    height: 61px;
+    padding: 23px 55px;
     border-radius: 100px;
     background-color: #29ABE2;
     color: white;
@@ -129,8 +120,8 @@
 }
 
 .btn-section {
-    padding-top: 30px;
-    padding-bottom: 80px;
+    padding-top: 50px;
+    padding-bottom: 100px;
 }
 
 /* white section */
@@ -140,18 +131,19 @@
     background-position: center;
     background-size: cover;
 }
+.second-part {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
 .manImg{
     translate: 0px 10px;
+    padding-top: 103px;
 }
-.showing-part {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    padding-bottom: 30px;
-    color: #2B426B;
-    font-family: raleway;
+.right-part{
+    padding-top: 102px;
 }
-
 .heading2 {
     color: #29ABE2;
     font-family: comfortaa;
@@ -159,19 +151,38 @@
     font-weight: bold;
     padding-bottom: 20px;
 }
-
+.circle{
+   
+   
+}
+.showing-part {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 50px;
+    padding-bottom: 58px;
+    color: #2B426B;
+    font-family: raleway;
+}
 .header3 {
     line-height: 200%;
 }
-
-.second-part {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding-top: 100px;
-
+.getBtn{
+    text-transform: uppercase;
+    border: 1px solid white;
+    border-radius: 100px;
+    background-color: #29ABE2;
+    color: white;
+    cursor: pointer;
+    font-family: raleway;
+    font-size: 13px;
+    font-weight: 500px;
+    padding: 23px 63px;
+  
 }
 
+
+/* get training here button pop up */
 .modal {
     display: none;
     position: fixed;
@@ -191,10 +202,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     margin: auto;
-    padding: 60px 50px;
-    width: 60%;
+    max-width: 80%;
     border-radius: 30px;
-
+    padding: 100px 0;
 }
 
 .form-title {
@@ -202,26 +212,36 @@
     font-weight: 600;
     font-size: 50px;
     font-family: comfortaa;
+    padding-bottom: 50px;
+    padding-left: 125px;
+    padding-right: 125px;
 }
 
 .input-field {
-    width: 500px;
+    max-width: 500px;
     border: none;
     border-radius: 100px;
-    padding: 20px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    padding-left: 31px;
+    padding-right: 334px;
     margin-bottom: 20px;
+    font-family: raleway;
 }
 
-#form-btn {
-    width: 550px;
-}
+.submitBtn{
+    padding: 28px 230px;
+    border-radius: 100px;
+    border: none;
+    background-color: #29ABE2;
 
+}
 .close {
     color: #aaaaaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
-    padding-right: 20px;
+    padding-right: 50px;
 }
 
 .close:hover,
@@ -233,6 +253,9 @@
 
 /* Media Query for Mobile Devices */
 @media screen and (max-width: 600px) {
+    .container{
+        padding: 0 1em;
+    }
 
     .logo {
         padding-top: 100px;
@@ -249,7 +272,7 @@
         line-height: 200%;
         padding-top: 20px;
         padding-bottom: 20px;
-        width: 322px;
+        max-width: 322px;
         margin: auto;
         text-indent: 10px;
     }
@@ -257,21 +280,21 @@
     .subTitle {
         font-size: 10px;
         font-weight: 100;
-        width: 275px;
+        max-width: 275px;
         margin: auto;
     }
 
     .video-bg {
-        width: 383px;
+        max-width: 383px;
         height: 242px;
     }
 
     .playBtn {
-        width: 38px;
+        max-width: 38px;
         height: 38px;
     }
 #video-frame{
-    width: 300px;
+    max-width: 300px;
 }
 .form-title{
     font-size: 20px;
@@ -287,7 +310,7 @@
     }
 
     .circle {
-        width: 30px;
+        max-width: 30px;
         height: 30px;
     }
 
@@ -298,32 +321,49 @@
     .header3{
         font-size: 12px;
     }
-   .getBtn{
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 70px;
-   }
+   
    .man-section{
     margin: auto;
    }
    .input-field{
-    width: 250px;
+    max-width: 250px;
    }
    #form-btn{
-    width: 300px;
+    max-width: 300px;
    }
    
 }
 
 @media screen and (max-width: 900px) {
     .input-field{
-        width: 250px;
+        max-width: 250px;
        }
        #form-btn{
-        width: 300px;
+        max-width: 300px;
        }
        .form-title{
         font-size: 20px;
         padding-bottom: 20px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .input-field{
+        max-width: 250px;
+       }
+       #form-btn{
+        max-width: 300px;
+       }
+       .form-title{
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    .video-bg{
+        max-width: 300px;
+    }
+    #video-frame{
+        max-width: 200px;
+    }
+    .bg-image{
+        padding: 10px;
     }
 }
