@@ -12,16 +12,25 @@
 <body>
     <header class="header-main">
         <div class="container header-content">
-            <div>
-                <img class="logo" src="images/logo.png" alt="">
+            <div class="logo">
+                <img src="images/logo.png" alt="">
             </div>
             <div class="header-text">
                 <h4 class="white">one point website checklist</h5>
-                <h3>This Is The EXACT System that we use to onboard our website clients</h3>
-                <p>ENTER YOUR INFORMATION AND ON THE NEXT PAGE I'LL SHOW YOU THE SYSTEM.</p>
+                    <h3>This Is The EXACT System that we use to onboard our website clients</h3>
+                    <p>ENTER YOUR INFORMATION AND ON THE NEXT PAGE I'LL SHOW YOU THE SYSTEM.</p>
             </div>
             <div class="video-content">
-                <img class="play-btn" src="images/play.png" alt="">
+                <div class="popup-overlay"></div>
+                <img class="play-btn" onclick="openVideo()" src="images/play.png" alt="">
+            </div>
+            <!-- popup video -->
+            <div id="video-popup" class="">
+                <div class="popup-video-content">
+                    <span class="close-play-btn" onclick="closeVideo()">&times;</span>
+                    <iframe id="video-frame"
+                     src="https://www.youtube.com/embed/bf2tFixliMA" title="Product Demo Video for Pipe | SaaS Product Demo Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
             </div>
             <div class="btn">
                 <button class="training-btn">GET TRAINING HERE!</button>
@@ -57,6 +66,7 @@
             </div>
         </div>
     </section>
+    <script src="main.js"></script>
 </body>
 
 </html>

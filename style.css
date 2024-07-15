@@ -34,7 +34,7 @@ h4 {
     text-align: center;
 }
 
-.header-main .header-content .logo {
+.header-main .header-content .logo img{
     max-width: 244px;
     object-fit: cover;
     padding-top: 52px;
@@ -81,6 +81,36 @@ h4 {
     max-width: 994px;
     margin-bottom: 50px;
 }
+
+.header-main .header-content #video-popup{
+    display: none;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    margin: 30px auto;
+}
+#video-frame{
+    width: 100%;
+    max-width:853px;
+    height: 480px;
+}
+.header-main .header-content #video-popup .close-play-btn{
+    position: absolute;
+    right: 200px;
+    top: 10px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.header-main .header-content #video-popup .close-play-btn:hover{
+    color: black;
+}
+
 
 .header-main .header-content .video-content .play-btn {
     cursor: pointer;
@@ -177,9 +207,22 @@ h4 {
 }
 
 @media only screen and (max-width:800px){
+    .container {
+        width: 100%;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
     .banner-main .banner-contant {
         flex-direction: column;
         flex-direction: column-reverse;
+    }
+    #video-frame{
+        width: 100%;
+        max-width:500px;
+        height: 300px;
+    }
+    .header-main .header-content #video-popup .close-play-btn{
+        right: 15px;
     }
 }
 @media only screen and (max-width:500px) {
@@ -227,5 +270,26 @@ h4 {
     }
     .header-main .header-content p{
         font-size: 10px;
+    }
+    #video-frame{
+        width: 100%;
+        max-width:300px;
+        height: 200px;
+    }
+    .header-main .header-content #video-popup .close-play-btn{
+        right: 15px;
+    }
+}
+@media screen and (max-width:300px) {
+    .header-main .header-content .logo img{
+        max-width: 150px;
+    }
+    #video-frame{
+        width: 100%;
+        max-width:200px;
+        height: 200px;
+    }
+    .header-main .header-content #video-popup .close-play-btn{
+        right: 15px;
     }
 }
