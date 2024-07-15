@@ -4,144 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page One</title>
+    <!-- css file link up -->
     <link rel="stylesheet" href="style.css">
-    <!-- comfortaa font link -->
-    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
-    <!-- font raleway -->
-    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
-    <title>Landing Page 1</title>
 </head>
 
 <body>
-    <div class="bg-image container">
-        <img class="logo" src="images/logo.png" alt="">
-        <h5 class="heading">on point website checklist</h5>
-        <h2 class="title">This Is The EXACT System that we use to onboard our website clients</h2>
-        <h6 class="subTitle">ENTER YOUR INFORMATION AND ON THE NEXT PAGE I'LL SHOW YOU THE SYSTEM.</h6>
-
-        <div class="video-bg">
-            <div class="overlay"></div>
-            <img class="playBtn" onclick="openVideo()" src="images/play.png" alt="">
-
-        </div>
-
-        <div id="video-popup" class="video-popup">
+    <header class="header-main">
+        <div class="container header-content">
+            <div>
+                <img class="logo" src="images/logo.png" alt="">
+            </div>
+            <div class="header-text">
+                <h4 class="white">one point website checklist</h5>
+                <h3>This Is The EXACT System that we use to onboard our website clients</h3>
+                <p>ENTER YOUR INFORMATION AND ON THE NEXT PAGE I'LL SHOW YOU THE SYSTEM.</p>
+            </div>
             <div class="video-content">
-                <span class="closePlayBtn" onclick="closeVideo()">&times;</span>
-                <iframe id="video-frame" width="560" height="315"
-                    src="https://www.youtube.com/embed/tgbNymZ7vqY?"></iframe>
+                <img class="play-btn" src="images/play.png" alt="">
+            </div>
+            <div class="btn">
+                <button class="training-btn">GET TRAINING HERE!</button>
             </div>
         </div>
-
-        <div class="btn-section">
-            <button id="myBtn" class="btn">get training here!</button>
-        </div>
-        <!-- get training here btn modal -->
-        <div id="myModal" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-
-                <h3 class="form-title">enter your details to watch</h3>
-                <form action="" method="post" >
-                    <input type="text" name="" id="" placeholder="FIRST NAME" class="input-field"> <br>
-                    <input type="text" name="" id="" placeholder="LAST NAME" class="input-field"><br>
-                    <input type="email" name="" id="" placeholder="Email" class="input-field"><br>
-                    <input type="number" name="" id="" placeholder="PHONE NUMBER" class="input-field"><br>
-                    <input type="submit" name="" id="form-btn" value="SUBMIT" class="submitBtn">
-                </form>
-            </div>
-        </div>
-    </div>
-    <div class="bg-image2 container">
-        <div class="second-part">
-            <div class="man-section">
-                <img class="manImg" src="images/man.png" alt="">
-            </div>
-            <div class="right-part">
-                <h3 class="heading2">in this video i'll show you</h3>
-
-                <div class="showing-part">
-                    <div><img class="circle" src="images/1.png" alt=""></div>
-                    <h4 class="header3">The elements needed to make your ideal <br> website</h4>
+    </header>
+    <section class="banner-main">
+        <div class="container">
+            <div class="banner-contant">
+                <div class="man-img">
+                    <img src="images/man.png" alt="">
                 </div>
-                <div class="showing-part">
-                    <div><img class="circle" src="images/1.png" alt=""></div>
-                    <h4 class="header3">How to make sure that your new website is <br> consistent with your brand and
-                        message</h4>
-                </div>
-                <div class="showing-part">
-                    <div><img class="circle" src="images/1.png" alt=""></div>
-                    <h4 class="header3">How to avoid a bad website design <br> experience</h4>
-                </div>
-                <div class="">
-                    <button id="myBtn2" class="getBtn">get access now!</button>
-                </div>
-                <!-- get access now btn modal -->
-                <div id="myModal2" class="modal">
-                    <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <h3 class="form-title">enter your details to watch</h3>
-                        <input type="text" name="" id="" placeholder="FIRST NAME" class="input-field"> <br>
-                        <input type="text" name="" id="" placeholder="LAST NAME" class="input-field"><br>
-                        <input type="text" name="" id="" placeholder="PHONE NUMBER" class="input-field"><br>
-                        <input type="submit" name="" value="SUBMIT" class="submitBtn">
+                <div class="banner-header">
+                    <h4 class="blue">In This Video I'll show you</h4>
+                    <div>
+                        <div class="banner-text">
+                            <img src="images/1.png" alt="">
+                            <p>The elements needed to make your ideal website.</p>
+                        </div>
+                        <div class="banner-text">
+                            <img src="images/1.png" alt="">
+                            <p>How to make sure that your new website is consistent with your brand and message.</p>
+                        </div>
+                        <div class="banner-text">
+                            <img src="images/1.png" alt="">
+                            <p>How to avoid a bad website design experience.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="access-btn">GET ACCESS NOW!</button>
                     </div>
                 </div>
             </div>
-
         </div>
-    </div>
-    <script>
-        // modal 1
-        var modal = document.getElementById("myModal");
-        var btn = document.getElementById("myBtn");
-        var span = document.getElementsByClassName("close")[0];
-
-        btn.onclick = function () {
-            modal.style.display = "block";
-        }
-
-        span.onclick = function () {
-            modal.style.display = "none";
-        }
-
-        window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-
-        // modal 2
-        var modal2 = document.getElementById("myModal2");
-        var btn2 = document.getElementById("myBtn2");
-        var span = document.getElementsByClassName("close")[0];
-
-        btn2.onclick = function () {
-            modal.style.display = "block";
-        }
-
-        span.onclick = function () {
-            modal.style.display = "none";
-        }
-
-        window.onclick = function (event) {
-            if (event.target == modal2) {
-                modal2.style.display = "none";
-            }
-        }
-
-        // video popup
-        function openVideo() {
-            document.getElementById("video-popup").style.display = "block";
-        }
-
-        function closeVideo() {
-            document.getElementById("video-popup").style.display = "none";
-            var iframe = document.getElementById("video-frame");
-            iframe.src = iframe.src; // Stop the video
-        }
-
-    </script>
+    </section>
 </body>
 
 </html>
