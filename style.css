@@ -34,7 +34,7 @@ h4 {
     text-align: center;
 }
 
-.header-main .header-content .logo img{
+.header-main .header-content .logo img {
     max-width: 244px;
     object-fit: cover;
     padding-top: 52px;
@@ -69,7 +69,7 @@ h4 {
     padding-bottom: 51px;
 }
 
-
+/* popup video start  */
 .header-main .header-content .video-content {
     background-image: url('images/videoBg.png');
     background-repeat: no-repeat;
@@ -82,7 +82,7 @@ h4 {
     margin-bottom: 50px;
 }
 
-.header-main .header-content #video-popup{
+.header-main .header-content #video-popup {
     display: none;
     position: fixed;
     z-index: 3;
@@ -93,12 +93,14 @@ h4 {
     overflow: auto;
     margin: 30px auto;
 }
-#video-frame{
+
+#video-frame {
     width: 100%;
-    max-width:853px;
+    max-width: 853px;
     height: 480px;
 }
-.header-main .header-content #video-popup .close-play-btn{
+
+.header-main .header-content #video-popup .close-play-btn {
     position: absolute;
     right: 200px;
     top: 10px;
@@ -107,7 +109,8 @@ h4 {
     font-weight: bold;
     cursor: pointer;
 }
-.header-main .header-content #video-popup .close-play-btn:hover{
+
+.header-main .header-content #video-popup .close-play-btn:hover {
     color: black;
 }
 
@@ -115,6 +118,8 @@ h4 {
 .header-main .header-content .video-content .play-btn {
     cursor: pointer;
 }
+
+/* popup video end */
 
 .header-main .header-content .btn {
     padding-bottom: 100px;
@@ -135,6 +140,91 @@ h4 {
     letter-spacing: 0.1em;
     color: #FFFFFF;
     cursor: pointer;
+}
+
+/* training button popup form */
+/* Modal hidden by default */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal content */
+.modal-content {
+    background-image: url('images/formBg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 15% auto;
+    padding: 100px 100px;
+    border-radius: 30px;
+    max-width: 60%;
+}
+
+.form-title {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 56px;
+    text-align: center;
+    text-transform: lowercase;
+    color: #29ABE2;
+    padding-bottom: 50px;
+}
+
+/* Close button */
+.close {
+    color: #aaa;
+    float: right;
+    margin-right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* form style */
+input[type=text],
+input[type=email],
+input[type=number],
+input[type=submit]  {
+    width: 100%;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    padding-left: 31px;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    border-radius: 100px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background: #29ABE2;
+    border-radius: 100px;
+    color: white;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    padding-left: 0px;
+}
+
+.input-field {
+    width: 75%;
+    margin: 0 auto;
 }
 
 /* header section end */
@@ -206,25 +296,42 @@ h4 {
     cursor: pointer;
 }
 
-@media only screen and (max-width:800px){
+@media only screen and (max-width:800px) {
     .container {
         width: 100%;
         padding: 0 15px;
         margin: 0 auto;
     }
+
     .banner-main .banner-contant {
         flex-direction: column;
         flex-direction: column-reverse;
     }
-    #video-frame{
+
+    #video-frame {
         width: 100%;
-        max-width:500px;
+        max-width: 500px;
         height: 300px;
     }
-    .header-main .header-content #video-popup .close-play-btn{
+
+    .header-main .header-content #video-popup .close-play-btn {
         right: 15px;
     }
+    .input-field,
+    input[type=submit] {
+        width: 100%;
+    }
+
+    .modal-content {
+        padding: 50px 5px;
+    }
+
+    .form-title {
+        font-size: 20px;
+        line-height: 22px;
+    }
 }
+
 @media only screen and (max-width:500px) {
     .container {
         width: 100%;
@@ -243,7 +350,7 @@ h4 {
 
     .banner-main .banner-contant .man-img img {
         max-width: 270px;
-    
+
     }
 
     .banner-main .banner-contant .banner-text p {
@@ -262,34 +369,70 @@ h4 {
     .banner-main .banner-contant .banner-header .blue {
         text-align: center;
     }
+
     .header-main .header-content .video-content {
         padding: 101px 0;
     }
-    .header-main .header-content .video-content .play-btn{
+
+    .header-main .header-content .video-content .play-btn {
         width: 38px;
     }
-    .header-main .header-content p{
+
+    .header-main .header-content p {
         font-size: 10px;
     }
-    #video-frame{
+
+    #video-frame {
         width: 100%;
-        max-width:300px;
+        max-width: 300px;
         height: 200px;
     }
-    .header-main .header-content #video-popup .close-play-btn{
+
+    .header-main .header-content #video-popup .close-play-btn {
         right: 15px;
     }
+    .input-field,
+    input[type=submit] {
+        width: 100%;
+    }
+
+    .modal-content {
+        padding: 50px 5px;
+    }
+
+    .form-title {
+        font-size: 20px;
+        line-height: 22px;
+    }
+  
 }
+
 @media screen and (max-width:300px) {
-    .header-main .header-content .logo img{
+    .header-main .header-content .logo img {
         max-width: 150px;
     }
-    #video-frame{
+
+    #video-frame {
         width: 100%;
-        max-width:200px;
+        max-width: 200px;
         height: 200px;
     }
-    .header-main .header-content #video-popup .close-play-btn{
+
+    .header-main .header-content #video-popup .close-play-btn {
         right: 15px;
+    }
+
+    .input-field,
+    input[type=submit] {
+        width: 100%;
+    }
+
+    .modal-content {
+        padding: 50px 5px;
+    }
+
+    .form-title {
+        font-size: 20px;
+        line-height: 22px;
     }
 }
